@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/invPopup.js"></script>
+    <script src="js/sign.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-group">
+        <div class="logo-img"></div>
+            <div class="logo">kickstarter</div>
+        </div>
+            <div id="navMenu">
+                <div data-idx="0" value="새로고침"><span data-idx="0">01</span>메인페이지</div>
+                <div data-idx="1"><span data-idx="1">02</span>펀드보기</div>
+                <div data-idx="2"><span data-idx="2">03</span>펀드등록</div>
+                <div data-idx="3"><span data-idx="3">04</span>투자자목록</div>
+                <div class="contact">
+                <div data-idx="4"> o <button data-idx="4">회원가입</button></div>
+                <div>o <button>로그인</button></div>
+            </div>
+            </div>
+        </header>
+
+        <div class="section-container">
+            <div class="menu-page main">
+                <div class="con">
+                    <!-- <div class="text-mush">
+                        feat table <br>funding more
+                    </div> -->
+                    <div class="main-t">
+                    <p>creative fundkickstarter</p>
+                    <div class="logo-text">We are help you.<br>welcome to the fund</div>
+                </div>
+                        <img src="images/main_img03.jpg" alt="">
+                    <section id="fundMain">
+
+                    </section>
+                </div>
+            </div>
+            <div class="menu-page">
+                <div class="head-fund">
+                    <input type="text">
+                    <div class="search">검색</div>
+                </div>
+                <div class="fund-btn btn-group">
+                    <button id="flbtn">&lt;</button>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <button id="frbtn">&gt;</button>
+                </div>
+                <div class="fund-list">
+                    <div class="con">
+                    </div>
+                </div>
+            </div>
+            <div class="menu-page join">
+                <img src="images/background.jpg" alt="">
+                <div class="form-group">
+                    <h2>fund join happy</h2>
+                    <div class="in-join">
+                    <input type="text" id="num" readonly placeholder="A0001">
+                </div>
+                    <div class="in-join">
+                        <input type="text" id="name" placeholder="펀드이름">
+                        <i id="fnameIcon" class="fas fa-check"></i>
+                    </div>
+                    <span id="nameMsg"></span>
+
+                    <div class="in-join">
+                        <input type="datetime-local" id="endDate">
+                        <i id="dateIcon" class="fas fa-check"></i>
+                    </div>
+                    <span id="dateMsg"></span>
+
+                    <div class="in-join">
+                        <input type="text" id="total" placeholder="모집금액">
+                    </div>
+                    <span id="totalMsg"></span>
+
+                    <div class="in-join">
+                        <input type="file" id="file">
+                        <i id="fileIcon" class="fas fa-check"></i>
+                    </div>
+                    <span id="fileMsg"></span>
+
+                    <div class="in-join">
+                        <input type="text" id="expl" style="height:30px" maxlength="499" placeholder="상세설명">
+                    </div>
+                    <span id="exMsg"></span>
+                    <button id="creat">제출하기</button>
+                </div>
+            </div>
+            <div class="menu-page list">
+                <div class="list-btn btn-group">
+                        <button id="lLbtn">&lt;</button>
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <button id="lrbtn">&gt;</button>
+                </div>
+                <div class="con">
+                    <!-- <img src="images/bg_대지 1.png" alt=""> -->
+                    <select id="select">
+                        <option value="datetime">최근등록순</option>
+                        <option value="number">펀드별</option>
+                        <option value="name">개인별</option>
+                    </select>
+                    <div class="inv-item">
+                        <span>펀드번호</span>
+                        <span>창업펀드명</span>
+                        <span>투자자명</span>
+                        <span>금액</span>
+                        <span>지분</span>
+                        <span>계약서</span>
+                    </div>
+                    <div class="inv-con">
+                        <div class="inv-list">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-page login formshar">
+                <div class="con">
+                    <div class="t-group">
+                        <h2>create for login</h2>
+                        <p>킥스타터 오신걸 환영함</p>
+                    </div>
+                    <div class="in">
+                        <input type="text" maxlength="100" id="email" placeholder="이메일">
+                        <i id="emailIcon" class="fas fa-check"></i>
+                    </div>
+                    <span id="emailMsg"></span>
+
+                    <div class="in">
+                        <input type="text" maxlength="100" id="lname" placeholder="이름">
+                        <i id="nameIcon" class="fas fa-check"></i>
+                    </div>
+                    <span id="lnameMsg"></span>
+
+                    <div class="in">
+                        <input type="text" maxlength="100" id="pass" placeholder="비밀번호">
+                        <i id="pIcon" class="fas fa-check"></i>
+                    </div>
+                    <span id="pMsg"></span>
+
+                    <div class="in">
+                        <input type="text" maxlength="100" id="passc" placeholder="비밀번호 확인">
+                        <i id="pcIcon" class="fas fa-check"></i>
+                    </div>
+                    <span id="pcMsg"></span>
+                    <button id="join" class="subBtn">가입하기</button>
+                </div>
+            </div>
+            <div class="section-container">
+                <footer style="width:1611px" >
+                    Copyright Gondr Allright reserved. Since 2017-03-01
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div id="popup">
+        <div class="inner" style="flex-direction: column;">
+            <div class="inner-back">
+            <h2>투자 펀딩 계약서</h2>
+            <input type="text" id="fnumber" readonly>
+            <input type="text" id="fname" readonly>
+            <input type="text" id="iname" readonly>
+            <input type="text" id="money" placeholder="금액" step="1">
+            <canvas width="570" height="100"></canvas>
+            <div class="pop-btn">
+                <button id="submit">투자</button>
+                <button id="close">취소</button>
+                <select id="setWidth">
+                    <option value="1">얇게</option>
+                    <option value="2">중간</option>
+                    <option value="3">굵게</option>
+                </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="view">
+        <div class="view-inner">
+            <div class="v-text">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <button id="exclose">x</button>
+            <div class="vBox-nav">
+                <p>펀드번호</p>
+                <p>펀드명</p>
+                <p>투자자명</p>
+                <p>금액</p>
+                <p>지분</p>
+            </div>
+            <div class="vBox">
+
+            </div>
+        </div>
+    </div>
+    <div id="toast"></div>
+</body>
+</html>

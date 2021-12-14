@@ -1,0 +1,817 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{ display:none; }
+body { overflow: hidden; }
+.vBox{overflow-x: hidden !important; 
+    overflow: hidden;}
+
+div.progress {
+    height:7px;
+}
+
+div.progress-bar {
+    background-color:rgb(177, 143, 98);
+}
+
+body > div.container{
+    width:1635px;
+    max-width: none !important;
+
+}
+
+.footer-text {
+    font-size: 12px;
+    font-weight: bold;
+    right: -169px;
+    color: #626262;
+    position: absolute;
+    bottom: 149px;
+    transform: rotateZ(90deg);
+}
+
+footer {
+    transform: rotateZ(90deg);
+    bottom: -490px;
+    right: -561px;
+    position: fixed;
+    color: #626262;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.con {
+    width:1090px;
+    margin-left:30px;
+}
+
+/* 헤더 영역 시작 */
+header{
+    position: fixed;
+    top:50%;
+    height:100vh;
+    width:190px;
+    transform: translateY(-50%);
+    left:30px;
+}
+
+.logo-group {
+    position: relative;
+    top: 4%;
+}
+
+.logo-img {
+    background-image: url(images/무제-6_대지\ 1.png);
+    width:40px;
+    height:50px;
+}
+/* 보류 */
+.text-mush {
+    color:#fff;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+#navMenu {
+    position: relative;
+    top:380px;
+}
+
+#navMenu > div {
+    cursor: pointer;
+    padding:10px;
+    color:#555;
+    font-size: 13px;
+}
+
+.contact {
+    margin-top: 23px;
+    position: relative;
+    left: 7px;
+    line-height: 31px;
+}
+
+#navMenu button {
+    border:none;
+    background:none;
+    color:#857d77;
+}
+
+#navMenu >div span {
+    color:rgb(209, 209, 209);
+    cursor: pointer;
+    transition: .3s;
+    position: relative;
+    text-align: center;
+    width:115px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+#navMenu > div:hover span{
+    background-color: #d8abab26;
+    color:rgb(114, 114, 114);
+}
+
+/* 헤더 영역 끝 */
+
+.section-container {
+    width:100%;
+    margin: 0 auto;
+}
+
+.section-container > .menu-page {
+    height:100vh;    
+}
+/* 메인페이지 영역 시작 */
+.main {
+    background-color: rgb(54,75,82);
+    position: relative;
+}
+
+
+.main img {
+    border-radius: 150px 0;
+    width: 970px;
+    height: 754px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+
+.header-bar {
+    padding:10px;
+    color:#fff;
+    text-align:center;
+    font-weight:bold;
+    background-color:#64616f;
+    margin-top: 50px;
+}
+
+.main-t {
+    position: absolute;
+    top: 38%;
+    z-index: 100;
+    left: 252px;
+}
+
+.main-t p {
+    color:rgb(195, 195, 195);
+    letter-spacing:2px;
+}
+
+.logo-text {
+    margin-top:20px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 70px;
+    color: #fff;
+}
+
+position: fixed;
+left: 65px;
+top: 50%;
+z-index: 14;
+font-family: 'Poppins', sans-serif;
+#696969;#bbb;
+.main .te {
+    right:100%;
+    width: 1px;
+    height: 300px;
+    background-color: #fff;
+    font-weight: bold;
+    position:absolute;
+    font-size: 42px;
+    letter-spacing: -2.4px;
+    right: 0px;
+    bottom: 13px;
+}
+
+
+#fundMain {
+    margin-top:10px;
+    display:grid;
+    grid-template-columns: repeat(4,247px);
+    bottom: 95px;
+    right: 0;
+    position:absolute;
+}
+
+.fBox div.progress-bar {
+    background-color:rgb(177, 143, 98);
+}
+
+.fBox {
+    position: relative;
+    height:210px;
+    /* #f4f4f4; */
+    /* bc8938ad */
+    border-right:1px solid #4a4a4a;
+}
+
+.fBox .info {
+    padding:20px;
+}
+
+.fBox p {
+    color:#afafaf;
+    font-size: 13px;
+}
+
+.fBox p:nth-child(1) {
+    font-weight: bold;
+    width: 77px;
+    padding-left:2px;
+    background-color:rgb(255 219 159 / 42%);
+    /* rgba(177, 143, 98, 0.76); */
+}
+
+.fBox p:nth-child(2) {
+    font-weight: bold;
+    font-size: 15px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+#btn {
+    position: relative;
+    left: 128px;
+    bottom: 11px;
+    padding: 2px 10px;
+    font-size: 13px;
+    border: 1px solid #8a8a8a;
+    background: none;
+    color: #d0d0d0;
+}
+
+.te p {
+    display:none;
+    color: #625252;
+    padding:20px;
+  }
+/* 메인페이지 영역 끝 */
+/* 펀드보기 영역 */
+.head-fund {
+    display:flex;
+    position: relative;
+    top: 17%;
+    left: 9%;
+}
+.head-fund input {
+    width:30%;
+    border:none;
+    padding: 7px;
+    margin-right: 15px;
+}
+.search {
+    width: 51px;
+    height: 37px;
+    background-color:rgb(177, 143, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.menu-page:nth-child(2) {
+    background-color:#cac0a833;
+}
+.fund-list {
+    position: relative;
+    top: 14%;
+    left: 7%;
+}
+
+.fund-list .con {
+    display:grid;
+    grid-template-columns: repeat(5,280px);
+    gap:10px;
+}
+
+.fund {
+    position: relative;
+    height:300px;
+    background-color:#fff;
+        border-top: 40px solid rgb(177 143 98 / 55%);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+
+.fund .info {
+    position: absolute;
+    bottom:0;
+    padding:20px;
+}
+
+p {
+    font-weight: lighter;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width:190px;
+}
+
+
+#open {
+    top:-137px;
+    position: absolute;
+    right: 40px;
+    width: 80px;
+    height: 40px;
+    font-size: 13px;
+    border-right: 1px solid #fff;
+    color:#fff;
+}
+
+#open:hover {
+    color:#555;
+}
+
+.menu-bar button{
+    position: absolute;
+    right: -45px;
+    width:80px;
+    top:-132px;
+    height:30px;
+    font-size: 13px;
+    color:#fff;
+}
+
+button {
+    border-radius: 0 !important;
+    border:none;
+    background:none;
+}
+
+.menu-bar h2{
+    top:90px;
+    position: absolute;
+    right: 0;
+    border: none;
+    background: none;
+    font-size: 13px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.btn-group {
+    left: 45%;
+    margin-top: 20px;
+    top: 79%;
+}
+
+.btn-group button {
+    font-size: 26px;
+    position: relative;
+    top: -9px;
+    width: 50px;
+}
+
+.btn-group p {
+    cursor: pointer;
+    text-align:center;
+    width:50px;
+    font-size: 15px;
+    font-weight:bold;
+    color:#555;
+}
+/* 펀드보기 영역 끝*/
+/* 펀드등록 영역 시작*/
+.join h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+    margin-bottom: 50px;
+}
+.join {
+    background-color: #ddd;
+    position: relative;
+    background-size: cover;
+}
+
+.form-group {
+    position: absolute;
+    right:0;
+    bottom:0;
+    background-color: #fff;
+    height: 630px;
+    width:810px;
+    padding:50px;
+}
+.in-join {
+    font-size: 17px;
+    width: 365px;
+    margin-top: 10px;
+    display:flex;
+    border-bottom:1px solid #ddd;
+}
+.in-join input {
+    padding:7px;
+    border:none;
+    width:365px;
+}
+
+.form-group span {
+    font-size: 12px;
+    color: #d44e4e;
+}
+
+#creat {
+    position: absolute;
+    bottom: 34px;
+    width: 365px;
+    background-color: rgb(206, 156, 92);
+    color:#fff;
+    left: 49px;
+    padding: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+/* 펀드등록 영역 끝*/
+/* 상세보기 모달창 */
+  #view {
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top:0;
+    right:0;
+    display: none;
+    z-index: 100;
+}
+
+#view.active {
+    display:flex;
+}
+
+.view-inner {
+    background-color: #fff;
+    width: 750px;
+    border-radius: 5px;
+    height: 502px;
+    top: 231px;
+    position: relative;
+    left: 32%;
+}
+
+.v-text {
+    line-height: 36px;
+    height: 100%;
+    padding-top: 20%;
+    padding-left: 20px;
+    position: absolute;
+    background-color: #dcdac7;
+}
+
+.v-text p {
+    color:rgb(125 112 95);
+    font-weight: bold;
+}
+
+.vBox {
+    width: 541px;
+    height: 48%;
+    overflow: scroll;
+    position: absolute;
+    top: 65px;
+    right: 0px
+}
+
+.vBox span {
+    font-size:15px;
+}
+
+.vBox .progress-bar {
+    width:40%;
+    
+}
+
+.vBox > div {
+    height:50px;
+    border:1px solid #f6f6f6;
+    display: flex;
+    padding:10px;
+}
+
+.vBox-nav {
+    display: flex;
+    position: absolute;
+    top: 35px;
+    background-color: #dcdac7;
+    width: 548px;
+    padding: 2px;
+    right: 0px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.vBox-nav p {
+    width:200px;
+    font-size: 13px;
+    color:#555;
+}
+
+.nBoxin div.progress {
+    width:11%;
+    position: relative;
+    top:7px;
+}
+
+.nBoxin p {
+    width:150px;
+    height:30px;
+    font-size: 13px;
+}
+
+
+.nBoxin p:nth-child(2) {
+    width:145px;
+}
+
+.nBoxin p:nth-child(3) {
+    text-align: center;
+}
+
+.nBoxin p:nth-child(4) {
+    text-align: center;
+}
+
+.nBoxin p:nth-child(6) {
+    padding-left:10px;
+    width:52px;
+}
+
+
+#exclose {
+    border:1px solid #ddd;
+    padding:5px 10px;
+    background:none;
+    font-size:10px;
+    position: absolute;
+    right:4px;;
+    top:4px;
+}
+/* 상세보기 모달창 끝*/
+/* 팝업창 시작*/
+#popup {
+    position: fixed;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+
+#popup h2 {
+    margin:40px;
+    text-align: center;
+    font-weight: bold;
+    color: #968573;
+}
+
+#popup .inner {
+    background-color: #fff;
+    border-radius: 2px;
+    padding:20px;
+    width: 700px;
+    display:flex;
+    height: 550px;
+    position: relative;
+    border-top: 30px solid #dcda;
+    top: 24%;
+    left: 34%;
+}
+
+#popup input {
+    margin-bottom:10px;
+    border:1px solid #ddd;
+    width:100%;
+    padding:5px;
+    padding-left:20px;
+    color:rgb(121, 121, 121);
+}
+
+.inner-back {
+    width: 81%;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+canvas {
+    width:570px;
+    height:100px;
+    border:1px solid #ddd;
+}
+
+.pop-btn {
+    margin-top:10px;
+}
+
+.pop-btn button {
+    color:#555;
+    padding:5px;
+    width:220px;
+    border:1px solid #ddd;
+
+}
+
+#setWidth {
+    width: 115px;
+    padding: 5px;
+    border:1px solid #ddd;
+}
+
+#popup.active {
+    display: flex;
+}
+/* 팝업창 끝*/
+/* 투자자목록 영역 시작 */
+.menu-page.list {
+    background-image: url(images/무제-5_대지\ 1.png);
+}
+
+.list #select {
+    position: relative;
+    left: 90%;
+    margin-bottom:10px;
+    padding: 6px;
+    border: 1px solid #555
+}
+.list .con {
+    position: relative;
+    top: 8%;
+    left: 17%;
+}
+
+.list div.progress {
+    position: relative;
+    left: -146px;
+    top: 7px;
+    height: 15px;
+    width:10%;
+}
+
+p {
+    margin-bottom:0 !important;
+}
+.inv-list {
+    position: relative;
+    top: 22%;
+    left:-11%;
+}
+
+.inv-list p {
+    width:120px;
+}
+
+
+
+.inv-list p:nth-child(2) {
+    width: 230px;
+}
+
+
+.inv-list p:nth-child(3) {
+    width:159px;
+    
+}
+
+.inv-list p:nth-child(4) {
+    width:260px;
+}
+
+.inv-list p:nth-child(5) {
+    width:100px;
+}
+
+.inv-list p:nth-child(6) {
+    position: relative;
+    left: -150px;
+}
+
+
+.inv-item {
+    position: relative;
+    top: 24%;
+    height: 64px;
+    padding: 25px;
+    background-color: rgb(193 175 150);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1218px;
+    left: -11%
+ }
+
+.inv-item span {
+    color:#fff;
+}
+
+.inv-item span:nth-child(4) {
+    width:38px;
+}
+
+.inv-item span:nth-child(5) {
+    width:187px;
+}
+
+
+
+.inv {
+    padding:30px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+    display:flex;
+    justify-content: space-between;
+    border-left:5px solid rgb(193 175 150);
+    background-color: #fff;
+    margin-top: 5px;
+    width:1217px;
+}
+/* 회원가입 영역 */
+
+.t-group {
+    margin-bottom:70px;
+}
+
+.login {
+    background-color: #f8f8f8
+}
+.login .con {
+    position: relative;
+    top: 15%;
+    height: 690px;
+    padding: 80px;
+    width: 920px;
+    left: 18%;
+}
+
+.in {
+    margin: 10px 0;
+    font-size: 17px;
+    border:1px solid #DFDFDF;
+    width: 765px;
+    display:flex;
+    background-color: #fff;
+}
+
+.fa-check-circle{
+    padding: 7px;
+    color:#c1c1c1;
+}
+
+.fa-check {
+    position: relative;
+    top: 15px;
+    left: -8px;
+    color:#c1c1c1;
+}
+
+.formshar input {
+    padding: 20px;
+    font-size: 17px;
+    border:none;
+    width: 765px;
+    margin: 0 auto;
+}
+
+.subBtn {
+    margin-top:40px;
+    padding: 15px;
+    font-size: 15px;
+    width: 765px;
+    background-color: rgb(206, 156, 92);
+    color:#fff;
+    border:none;
+}
+
+.formshar span {
+    /* height:30px; */
+    color:red;
+}
+
+#toast {
+    position: fixed;
+    min-width: 500px;
+  top:0;
+  z-index: 100;
+    right: 10px;
+    text-align: right;
+  }
+  
+  #toast .toastWrap {
+    margin: 6px 0 0;
+    padding: 18px 0 15px;
+    display: none;
+    border:2px solid rgb(244, 250, 156);
+    background: #ececc6;
+  }
+
+  #toast b:before {
+    content: "\2716";
+  }
+
